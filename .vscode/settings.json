@@ -1,0 +1,21 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "stm32f4xx_rcc.h": "c",
+        "spi_pcap02.h": "c",
+        "stm32f4xx.h": "c",
+        "bsp_led.h": "c",
+        "system_stm32f4xx.h": "c",
+        "core_cm4.h": "c",
+        "core_cminstr.h": "c",
+        "core_cmsimd.h": "c",
+        "core_cmfunc.h": "c",
+        "stm32f4xx_gpio.h": "c",
+        "bsp_debug_usart.h": "c",
+        "stdio.h": "c",
+        "stm32f4xx_spi.h": "c",
+        "math.h": "c",
+        "stdlib.h": "c",
+        "errno.h": "c"
+    }
+}
