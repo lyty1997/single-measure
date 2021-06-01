@@ -4,12 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/mnt/e/Program_winter_vacation21/single_test/v1.0f405/Libraries/STM32F4xx_StdPeriph_Driver/inc",
-                "/mnt/e/Program_winter_vacation21/single_test/v1.0f405/Libraries/CMSIS/Include",
-                "/mnt/e/Program_winter_vacation21/single_test/v1.0f405/User",
-                "/mnt/e/Program_winter_vacation21/single_test/v1.0f405/User/led",
-                "/mnt/e/Program_winter_vacation21/single_test/v1.0f405/User/SPI_PCAP02",
-                "/mnt/e/Program_winter_vacation21/single_test/v1.0f405/User/usart"
+                "include",
+                "stlib",
+                "stlib/cminc"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/arm-none-eabi-gcc",
