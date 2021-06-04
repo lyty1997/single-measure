@@ -7,8 +7,8 @@
  * Description        : STM32F407开发板通过SPI控制读取PCap02AE
  ******************************************************************************/
   
-#include "stm32f4xx.h"
-#include "stm32f4xx_rcc.h"
+#include "stm32f4xx.h"		//??????
+// #include "stm32f4xx_rcc.h"
 #include "bsp_led.h"
 #include "bsp_debug_usart.h"
 #include "SPI_PCAP02.h"		 //声明了私有函数
@@ -988,7 +988,6 @@ int main()
         }
       }
       printf("| SRAM address 4095 reached!\n");
- 
       puts("Read the first 16 Bytes from SRAM...");
       for (uint16_t i=0; i<16; i++) 
       {
@@ -1182,6 +1181,7 @@ int main()
     Capacitance_ratio = RES / pow(2,21);
 //			Capacitance_ratio = convertBinaryToDecimal(RES);
     printf("%f\n",  Capacitance_ratio);	
+	LED_CYAN;
 //		printf("  0x%08X\r, %f\n", RES, Capacitance_ratio);	
 	}
 	//查找方差最小的测量结果

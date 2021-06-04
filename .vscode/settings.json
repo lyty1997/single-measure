@@ -16,6 +16,7 @@
         "stm32f4xx_spi.h": "c",
         "math.h": "c",
         "stdlib.h": "c",
-        "errno.h": "c"
+        "errno.h": "c",
+        "cstdio": "c"
     }
 }
