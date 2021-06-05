@@ -17,6 +17,8 @@
         "math.h": "c",
         "stdlib.h": "c",
         "errno.h": "c",
-        "cstdio": "c"
+        "cstdio": "c",
+        "cmath": "c",
+        "*.tcc": "c"
     }
 }

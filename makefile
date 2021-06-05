@@ -51,26 +51,44 @@ INCS += -Istlib -Istlib/cminc -Iinclude
 OBJS += main.o
 OBJS += stlib/startup_stm32f40xx.o
 OBJS += stlib/system_stm32f4xx.o
-OBJS += source/bsp_debug_usart.o source/bsp_led.o source/SPI_PCAP02.o
+OBJS += source/bsp_debug_usart.o source/bsp_led.o source/SPI_PCAP02.o source/syscalls.o
 OBJS += source/stm32f4xx_gpio.o source/stm32f4xx_rcc.o source/stm32f4xx_spi.o source/stm32f4xx_usart.o source/SysTick.o source/misc.o
 # 使用了编译优化和硬件浮点数
 CFLAGS += -mcpu=cortex-m4 -mthumb -Wall
 CFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
 CFLAGS += -O3
 CFLAGS += -ffunction-sections -fdata-sections
-LFLAGS += -mthumb -mcpu=cortex-m4
-LFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
-LFLAGS += -Wl,--gc-sections
-LFLAGS += -Wl,-cref,-u,Reset_Handler
+#---------------------------------------------------------------------------------
+# LFLAGS += -mthumb -mcpu=cortex-m4
+# LFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
+# LFLAGS += -std=c99
+# LFLAGS += -Wl,--gc-sections
+# LFLAGS += -Wl,-cref,-u,Reset_Handler
+# LFLAGS += -Wl,-Map=test.map
+# LFLAGS += -Wl,--defsym=malloc_getpagesize_P=0x80
+# LFLAGS += -Wl,--start-group
+# LFLAGS += -Wl,--end-group
+# LFLAGS += -Os
+# LFLAGS += --specs=nosys.specs --specs=nano.specs -nostartfiles
+# LFLAGS += --specs=nosys.specs
+# LFLAGS += -u printf_float -u sprintf_float -u snprintf_float -u vsnprintf_float
+# LFLAGS += -u printf_float
+# LFLAGS += -static
+# LFLAGS += -lc
+# LFLAGS += -lm
+
+#------------------------------------------------------------------------------
+LFLAGS += -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+LFLAGS += --specs=nosys.specs --specs=nano.specs
+LFLAGS += -u printf_float
+# LFLAGS += --specs=nosys.specs --specs=nano.specs
+# LFLAGS += -u printf_float -u sprintf_float -u snprintf_float -u vsnprintf_float
+# LFLAGS += -std=c99
+LFLAGS += -Wl,--check-sections -ffunction-sections -fdata-sections -Wl,--gc-sections -Wl,--print-memory-usage
+LFLAGS += -Wl,--reduce-memory-overheads -Wl,--relax
 LFLAGS += -Wl,-Map=test.map
-LFLAGS += -Wl,--defsym=malloc_getpagesize_P=0x80
-LFLAGS += -Wl,--start-group
-LFLAGS += -Wl,--end-group
-LFLAGS += -O2
-LFLAGS += -specs=nosys.specs
-LFLAGS += -static
-LFLAGS += -lc
-LFLAGS += -lm
+LFLAGS += -Os
+
 # 最后生成的bin文件
 all:test.bin test.hex
 .PHONY:clean

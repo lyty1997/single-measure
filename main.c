@@ -22,8 +22,8 @@
 #include <stdbool.h> 
 
 
-int i;
-int j;
+// int i;
+// int j;
 
 /**************** 定义PCAP02的私有变量 ******************************/
 
@@ -841,7 +841,7 @@ uint32_t  STATUS;
 uint8_t   Res1_content[3];
 uint8_t		Res_content[45];
 float     Res4_content;
-float     Capacitance_ratio;
+double     Capacitance_ratio;
 uint8_t   Status_content[3];
 uint8_t		RunBit;
 /********************************************************************************/
@@ -1147,16 +1147,15 @@ int main()
   SPI_PCAP02_SendByte(PCap02_Initialize);
 	//开始测量
 	SPI_PCAP02_SendByte(PCap02_CDC_Start_Conversion);
-//			Wait_For_Interrupt();
+//			Wait_For_Measurement();
 
 	/********************** 下面开始主循环 *********************/
-	while(1)
-	{
+	while(1){
 		//软件操作码触发CDC转换数据，开始测量
 //		SPI_PCAP02_SendByte(PCap02_CDC_Start_Conversion);
 		//硬件GPIO3上升沿触发
 //		SPI_PCAP02_PG3_HIGH();
-		Wait_For_Interrupt();
+		Wait_For_Measurement();
 		//	读取状态寄存器
 //		SPI_PCAP02_Status();	
 		//读取结果
@@ -1170,7 +1169,13 @@ int main()
 //		Write_Incremental(PCAP02_SPI, Read_Results, 0x09, Res1_content, 3);
 		/********* 6通道结果读取 **********/
 		Write_Incremental(PCAP02_SPI, Read_Results, 0x12, Res1_content, 3);
-    RES = (Res1_content[2] << 16) | (Res1_content[1] << 8) | Res1_content[0];
+
+		// debug
+		// for(int i = 0; i <3;i++) {
+		// 	printf("%x", Res1_content[i]);
+		// }
+
+    	RES = (Res1_content[2] << 16) | (Res1_content[1] << 8) | Res1_content[0];
 		
 		// 读取所有结果寄存器
 //		Write_Incremental(PCAP02_SPI, Read_Results, 0x00, Res_content, 45);
@@ -1178,11 +1183,28 @@ int main()
 //		SPI_PCAP02_PG3_LOW();
 		//	读取状态寄存器
 //		SPI_PCAP02_Status();	
-    Capacitance_ratio = RES / pow(2,21);
+    	Capacitance_ratio = RES / pow(2,21);
+		// Capacitance_ratio = RES / 2097152;
+		// Capacitance_ratio = RES;
+	
+		printf("RES = %ld\n", RES);
+		// printf("RES/2097152 = %f\n",RES/(double)2097152);
 //			Capacitance_ratio = convertBinaryToDecimal(RES);
-    printf("%f\n",  Capacitance_ratio);	
-	LED_CYAN;
+    	// printf("Capacitance_ratio = %x\n",  Capacitance_ratio);	
+	// LED_CYAN;
 //		printf("  0x%08X\r, %f\n", RES, Capacitance_ratio);	
+		// int res;
+		// float debug1;
+		// double debug2;
+		// res = RES;
+		// debug1 =(float) res / 1000000;
+		// debug2 = res / 1000000;
+		// printf("RES = %ld , res = %ld , debug1 = %f , debug2 = %f\n", RES,res, debug1, debug2);
+		// printf("ceshi1 = %f\n",1.993);
+		// printf("ceshi1 = %d\n",1993);
+		// printf("size of RES = %d, size of res = %d, size of debug1 = %d, size of debug2 = %d\n", 
+		// sizeof(RES),sizeof(res),sizeof(debug1),sizeof(debug2));
+		// LED_WHITE;
 	}
 	//查找方差最小的测量结果
 //	find_var	iance_float(1000);
@@ -1250,7 +1272,7 @@ float find_variance_float(uint16_t sample_count)
 
   sram_mem_offset = 1000;  // Using values 1000-2000 for Variance calculation
   
-  for(i=0;i<sample_count;i++)
+  for(int i=0;i<sample_count;i++)
   {
     data = sram_float_memory[sram_mem_offset]; 
     sum = sum + data;
@@ -1260,7 +1282,7 @@ float find_variance_float(uint16_t sample_count)
   mean = sum/sample_count;
   sram_mem_offset = 1000; // Using values 1000-2000 for Variance calculation
   
-  for(j=0;j<sample_count;j++)
+  for(int j=0;j<sample_count;j++)
   {
     data = sram_float_memory[sram_mem_offset];
     diff = data - mean;
@@ -1274,5 +1296,22 @@ float find_variance_float(uint16_t sample_count)
   return variance;
 }
 
+/*---------------------------------二进制转十进制-------------------------------------*/
+// void TwoToTen()
+// {   
+//         long long n,a;
+//         int sum = 0, i = 0, m;
+//         printf("输入一个二进制数: ");
+//         scanf("%lld", &n);
+//         a = n;
+//         while (n != 0)
+//         {
+//             m = n % 10;
+//             n /= 10;
+//             sum += m*pow(2, i);
+//             ++i;
+//         }
+//         printf("二进制数 %lld 转换为十进制为 %d\n", a, sum);
+// }
 
 

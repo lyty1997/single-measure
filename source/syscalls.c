@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "stm32f4xx.h"
+#include "stm32f4xx_usart.h"
+#include "bsp_led.h"
 /*
  * To implement the STDIO functions you need to create
  * the _read and _write functions and hook them to the
@@ -115,9 +118,9 @@ void get_buffered_line(void)
 /*
  * Called by libc stdio fwrite functions
  */
-int _write(int fd, char *ptr, int len)
-{
-    int i = 0;
+// int _write(int fd, char *ptr, int len)
+// {
+//     int i = 0;
 
     /*
      * write "len" of char from "ptr" to file id "fd"
@@ -125,29 +128,50 @@ int _write(int fd, char *ptr, int len)
      *
     * Only work for STDOUT, STDIN, and STDERR
      */
+    // if (fd > 2)
+    // {
+    //     return -1;
+    // }
+    // LED_RED;
+    // while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
+    
+    // while (*ptr && (i < len))
+    // {
+    //     USART_SendData(USART1, *ptr);
+
+    //     if (*ptr == '\n')
+    //     {
+    //         USART_SendData(USART1, '\r');
+    //     }
+
+    //     i++;
+    //     ptr++;
+    // }
+    // LED_YELLOW;
+
+//     return i;
+// }
+/********************************************************************************************************/
+//printf重定向到串口函数
+/********************************************************************************************************/
+int _write (int fd, char *pBuffer, int size)  
+{  
     if (fd > 2)
     {
         return -1;
     }
+    
+    for (int i = 0; i < size; i++)  
 
-    while (*ptr && (i < len))
-    {
-        USART_SendData(USART1, *ptr);
+    {  
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);//等待上一次串口数据发送完成  
 
-        if (*ptr == '\n')
-        {
-            USART_SendData(USART1, '\r');
-        }
+        USART1->DR = (uint8_t) *(pBuffer+i);       //写DR,串口1将发送数据
+    }  
 
-        i++;
-        ptr++;
-    }
-    // LED_YELLOW;
-
-    return i;
+    return size;  
 }
 /********************************************************************************************************/
-
 /*
  * Called by the libc stdio fread fucntions
  *

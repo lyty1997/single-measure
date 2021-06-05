@@ -155,7 +155,7 @@ int convertBinaryToDecimal(long long n);
 
 /************************* SPI总线相关 **************************************/
 void GPIOs_Init(void);
-void Wait_For_Interrupt(void);
+void Wait_For_Measurement(void);
 void SPI_PCAP02_Init(void);
 uint8_t SPI_PCAP02_ReadByte(void); 
 void SPI_PCAP02_SendByte(uint8_t byte);

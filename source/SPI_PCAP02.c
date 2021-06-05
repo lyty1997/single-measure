@@ -449,11 +449,11 @@ void Write_RunBit(uint8_t data)
 	* @brief INTN中断，每次转换，INTN引脚产生一次下降沿中断，
 					 用于判断是否转换
   * @param  
-  * @retval 
+  * @retval Wait_For_Measurement
 **********************************************************/
-void Wait_For_Interrupt(void)
+void Wait_For_Measurement(void)
 {
-	while (GPIO_ReadInputDataBit (GPIOA, GPIO_Pin_11)==1)
+	while (GPIO_ReadInputDataBit (GPIOC, GPIO_Pin_5)==1)
 	{	}
 }
 /**************************************************************/
