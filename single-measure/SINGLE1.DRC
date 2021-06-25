@@ -1,0 +1,58 @@
+Date and Time : 01/20/21 21:05:48
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+Checking Off-Page Connections
+
+Checking Pin to Port Connections
+
+Checking Physical Rules 
+
+
+Checking Pins and Pin Connections
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Entire Design: SINGLE1 
+--------------------------------------------------
+
+Checking Power Pin Visibility  
+
+Checking Normal Convert View Sync  
+INFO(ORCAP-36105): Checking Missing Pin Numbers  
+
+Checking Device with Zero pins  
+INFO(ORCAP-36101): Checking Missing PCB Footprint Property  
+#1 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D5: SCHEMATIC1, 05 USB_COM (166.12, 248.16).
+
+Checking Name Property for Hierarchical Instances  
+
+INFO(ORCAP-2211): Check High Speed Properties Syntax
+
+INFO(ORCAP-2212): Check Power Ground Mismatch
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? 3V  3V  VDD3V_CDC  
+                    SCHEMATIC1, 04 CDC_PCAP02AE  (218.44, 122.94) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? 3V3  3V3  VDD_MCU  
+                    SCHEMATIC1, 03 MCU_STM32F405VGT6  (178.82, 99.06) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? DGND  DGND  VSS_MCU  
+                    SCHEMATIC1, 05 USB_COM  (279.40, 62.23) 
+
+Reporting Unused Refdes in multiple part packages
+Part	                       Quantity	                       Reference
+-----------------------------------------------------------------------------------------

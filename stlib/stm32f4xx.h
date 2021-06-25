@@ -184,7 +184,7 @@
 /**
  * @brief Configuration of the Cortex-M4 Processor and Core Peripherals 
  */
-#define __FPU_USED                1       /*!< ??FPU                                        */
+// #define __FPU_USED                1       /*!< ENABLE FPU                                        */
 #define __CM4_REV                 0x0001  /*!< Core revision r0p1                            */
 #define __MPU_PRESENT             1       /*!< STM32F4XX provides an MPU                     */
 #define __NVIC_PRIO_BITS          4       /*!< STM32F4XX uses 4 Bits for the Priority Levels */

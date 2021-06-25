@@ -1,0 +1,17 @@
+\t (00:00:19) allegro 17.2 S058 Windows SPB 64-bit Edition
+\t (00:00:19)     Journal start - Fri Jul 31 21:35:24 2020
+\t (00:00:19)         Host=DESKTOP-ONS7AT2 User=luyangtianyu Pid=12196 CPUs=6
+\t (00:00:19) CmdLine= E:\application\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:19) 
+   (00:00:19) Loading axlcore.cxt 
+\t (00:00:20) Opening existing design...
+\i (00:00:20) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged QFP50P1600X1600X120-101N
+\d (00:00:20) Design opened: E:/application/Cadence/project/Acquisition Circuit Test/PCBlibrary/QFP50P1600X1600X120-101N/QFP50P1600X1600X120-101N_Allegro/QFP50P1600X1600X120-101N.dra
+\i (00:00:21) trapsize 1093
+\i (00:00:21) trapsize 1124
+\i (00:00:21) trapsize 1093
+\i (00:00:21) trapsize 725
+\i (00:00:21) trapsize 1093
+\i (00:00:22) generaledit 
+\i (00:16:02) exit 
+\t (00:16:02)     Journal end - Fri Jul 31 21:51:07 2020

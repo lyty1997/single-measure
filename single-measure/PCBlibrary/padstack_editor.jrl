@@ -1,0 +1,14 @@
+\t (00:00:00) padstack_editor 17.2 S058 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Feb 03 14:06:47 2021
+\t (00:00:00)         Host=LAPTOP-JMKSPL9D User=Luyang Pid=272 CPUs=16
+\t (00:00:00) CmdLine= d:\applications\cadence\cadence_spb_17.2-2016\tools\bin\padstack_editor.exe D:\Program\project\single-measure\PCBlibrary\smd0r3_0r9.pad
+\t (00:00:00) 
+\d (00:00:03) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:00:10) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:00:12) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (07:29:58) QtFillin Yes
+\t (07:29:58)     Journal end - Wed Feb 03 21:36:46 2021
+:00:34) QtSignal GuidedMaskLayersTab LayersTable cellClicked 2 Pad 2 1
+\d (00:00:41) QtSignal GuidedMaskLayersTab PadWidth editingFinished 0.2250
+\d (00:00:58) QtSignal MainWindow Save triggered
+\t (07:22:51)     Journal end - Wed Feb 03 21:36:40 2021

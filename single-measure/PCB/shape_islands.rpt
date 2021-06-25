@@ -1,0 +1,18 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Island Report                                              )
+(                                                                     )
+(    Drawing          : single20210120.brd                            )
+(    Software Version : 17.2S058                                      )
+(    Date/Time        : Thu Feb 18 16:36:33 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Total islands on design: 1
+
+
+  <<<  ETCH  >>>
+
+    Layer = GND
+	Point on shape: (-24.2522 2.3480)  Net: AGND

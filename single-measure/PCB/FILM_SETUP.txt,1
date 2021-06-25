@@ -1,0 +1,6 @@
+axlFilmCreate( "adb" ?negative nil ?undefineLineWidth 0.0000 ?sequence 7 
+	?rotation 0 ?xOffset 0.0000 ?yOffset 0.0000 ?shapeBoundingBox 2.5400 ?mirrored nil ?fullContact nil 
+	?suppressUnconnectPads nil ?drawMissingPadApertures nil ?useApertureRotation nil 
+	?suppressShapeFill nil ?vectorBasedPad t ?drawHolesOnly nil 
+	?domains '(ipc2581 pdf artwork visibility ) ?ipc2581 '() 
+	?layers '("PACKAGE GEOMETRY/SILKSCREEN_BOTTOM" "BOARD GEOMETRY/OUTLINE" "BOARD GEOMETRY/SILKSCREEN_BOTTOM" "BOARD GEOMETRY/DESIGN_OUTLINE" ))

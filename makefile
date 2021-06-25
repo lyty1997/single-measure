@@ -51,7 +51,7 @@ INCS += -Istlib -Istlib/cminc -Iinclude
 OBJS += main.o
 OBJS += stlib/startup_stm32f40xx.o
 OBJS += stlib/system_stm32f4xx.o
-OBJS += source/bsp_debug_usart.o source/bsp_led.o source/SPI_PCAP02.o source/syscalls.o
+OBJS += source/bsp_debug_usart.o source/bsp_led.o source/SPI_PCAP02.o source/syscalls.o source/gpio_init.o
 OBJS += source/stm32f4xx_gpio.o source/stm32f4xx_rcc.o source/stm32f4xx_spi.o source/stm32f4xx_usart.o source/SysTick.o source/misc.o
 # 使用了编译优化和硬件浮点数
 CFLAGS += -mcpu=cortex-m4 -mthumb -Wall
@@ -80,14 +80,19 @@ CFLAGS += -ffunction-sections -fdata-sections
 #------------------------------------------------------------------------------
 LFLAGS += -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
 LFLAGS += --specs=nosys.specs --specs=nano.specs
-LFLAGS += -u printf_float
 # LFLAGS += --specs=nosys.specs --specs=nano.specs
 # LFLAGS += -u printf_float -u sprintf_float -u snprintf_float -u vsnprintf_float
-# LFLAGS += -std=c99
+LFLAGS += -std=c99
 LFLAGS += -Wl,--check-sections -ffunction-sections -fdata-sections -Wl,--gc-sections -Wl,--print-memory-usage
 LFLAGS += -Wl,--reduce-memory-overheads -Wl,--relax
 LFLAGS += -Wl,-Map=test.map
 LFLAGS += -Os
+LFLAGS += -u printf_float
+LFLAGS += -lc -lm
+# LFLAGS += -lgcc -lnosys
+# LFLAGS += -lrdimon
+# LFLAGS += -lprintf
+# LFLAGS += -Wl,-u,vfprintf
 
 # 最后生成的bin文件
 all:test.bin test.hex
@@ -100,7 +105,7 @@ test.bin:test.elf
 test.hex:test.elf
 	arm-none-eabi-objcopy $< -Oihex $@
 test.elf:$(OBJS) $(OBJ_FLASH)
-	arm-none-eabi-gcc $(LFLAGS) $^ -T stlib/STM32F405RGT6_FLASH.ld -o $@
+	arm-none-eabi-gcc $(LFLAGS) $^ -T stlib/STM32F405VGT6_FLASH.ld -o $@
 	arm-none-eabi-size $@
 burn:test.bin
 	st-flash write $< 0x8000000

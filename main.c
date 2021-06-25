@@ -7,8 +7,8 @@
  * Description        : STM32F407开发板通过SPI控制读取PCap02AE
  ******************************************************************************/
   
-#include "stm32f4xx.h"		//??????
-// #include "stm32f4xx_rcc.h"
+#include "stm32f4xx.h"		
+#include "gpio_init.h"
 #include "bsp_led.h"
 #include "bsp_debug_usart.h"
 #include "SPI_PCAP02.h"		 //声明了私有函数
@@ -886,7 +886,9 @@ int main()
 	#define WRITE_SRAM
 //	#define READ_SRAM
 //	#define WRITE_EEPROM
-	
+	// 使能PCAP的SPI
+	IIC_EN_Config();
+	GPIO_ResetBits(GPIOB, GPIO_Pin_1);
 	//配置LED
 	LED_GPIO_Config();
 	
@@ -1156,6 +1158,8 @@ int main()
 		//硬件GPIO3上升沿触发
 //		SPI_PCAP02_PG3_HIGH();
 		Wait_For_Measurement();
+		LED_CYAN;
+		printf("debug\n");
 		//	读取状态寄存器
 //		SPI_PCAP02_Status();	
 		//读取结果
@@ -1174,24 +1178,24 @@ int main()
 		// for(int i = 0; i <3;i++) {
 		// 	printf("%x", Res1_content[i]);
 		// }
-
+// LED_CYAN;
     	RES = (Res1_content[2] << 16) | (Res1_content[1] << 8) | Res1_content[0];
-		
+		// printf("%ld\n", RES);
 		// 读取所有结果寄存器
 //		Write_Incremental(PCAP02_SPI, Read_Results, 0x00, Res_content, 45);
 //    RES = (Res_content[5] << 16) | (Res_content[4] << 8) | Res_content[3];
 //		SPI_PCAP02_PG3_LOW();
 		//	读取状态寄存器
 //		SPI_PCAP02_Status();	
-    	Capacitance_ratio = RES / pow(2,21);
-		// Capacitance_ratio = RES / 2097152;
+    	// Capacitance_ratio = RES / pow(2,21);
+		Capacitance_ratio = (RES / 2097152)*1000000;
 		// Capacitance_ratio = RES;
 	
 		printf("RES = %ld\n", RES);
 		// printf("RES/2097152 = %f\n",RES/(double)2097152);
 //			Capacitance_ratio = convertBinaryToDecimal(RES);
-    	// printf("Capacitance_ratio = %x\n",  Capacitance_ratio);	
-	// LED_CYAN;
+    	printf("Capacitance_ratio = %f\n",  Capacitance_ratio);	
+		// LED_CYAN;
 //		printf("  0x%08X\r, %f\n", RES, Capacitance_ratio);	
 		// int res;
 		// float debug1;
@@ -1200,8 +1204,8 @@ int main()
 		// debug1 =(float) res / 1000000;
 		// debug2 = res / 1000000;
 		// printf("RES = %ld , res = %ld , debug1 = %f , debug2 = %f\n", RES,res, debug1, debug2);
-		// printf("ceshi1 = %f\n",1.993);
-		// printf("ceshi1 = %d\n",1993);
+		// printf("ceshi1 = %f\n",112.993);
+		// printf("ceshi2 = %d\n",112);
 		// printf("size of RES = %d, size of res = %d, size of debug1 = %d, size of debug2 = %d\n", 
 		// sizeof(RES),sizeof(res),sizeof(debug1),sizeof(debug2));
 		// LED_WHITE;

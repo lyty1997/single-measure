@@ -1,0 +1,20 @@
+M48
+METRIC,TZ
+T01C.254
+T02C.3048
+T03C.9
+T04C1.
+T05C3.6
+T06C.6
+T07C.9
+T08C1.
+;LEADER: 12 
+;HEADER: 
+;CODE  : ASCII 
+;FILE  : single210218-1-1-np.drl for board D:/Program/project/single-measure/PCB/#Taaaadt13164.tmp ... layers TOP and TOP
+;T08 Holesize 1. = 1.000000 Tolerance = +0.000000/-0.000000 NON_PLATED MM Quantity = 1
+%
+G90
+T08
+X-1351200Y-962200
+M30

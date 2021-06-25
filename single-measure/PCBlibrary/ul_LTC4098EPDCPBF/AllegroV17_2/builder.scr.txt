@@ -1,0 +1,36 @@
+skill load "E:/application/Cadence/project/Acquisition Circuit Test/PCBlibrary/ul_LTC4098EPDCPBF/AllegroV17_2/builder.ile" 
+skill changeWorkingDir "E:/application/Cadence/project/Acquisition Circuit Test/PCBlibrary/ul_LTC4098EPDCPBF/AllegroV17_2" 
+skill LB_createFootprint "E:/application/Cadence/project/Acquisition Circuit Test/PCBlibrary/ul_LTC4098EPDCPBF/AllegroV17_2/QFN-20_UDC_LIT-L.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist QFN-20_UDC_LIT-L.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+skill LB_createFootprint "E:/application/Cadence/project/Acquisition Circuit Test/PCBlibrary/ul_LTC4098EPDCPBF/AllegroV17_2/QFN-20_UDC_LIT-M.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist QFN-20_UDC_LIT-M.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+skill LB_createFootprint "E:/application/Cadence/project/Acquisition Circuit Test/PCBlibrary/ul_LTC4098EPDCPBF/AllegroV17_2/QFN-20_UDC_LIT.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist QFN-20_UDC_LIT.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+exit 

@@ -1,0 +1,19 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Dynamic Status Report                                      )
+(                                                                     )
+(    Drawing          : single192308.brd                              )
+(    Software Version : 17.2S058                                      )
+(    Date/Time        : Sat Jan 16 23:58:48 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Dynamic shapes out of date: 1 out of 82
+  Current fill mode         : SMOOTH
+
+
+  <<<  ETCH  >>>
+
+    Layer = GND
+       State: Out of date  Point on shape: (-28.0000 24.7459)  Net: AGND

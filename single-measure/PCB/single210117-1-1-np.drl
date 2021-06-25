@@ -1,0 +1,11 @@
+M48
+METRIC,TZ
+;LEADER: 12 
+;HEADER: 
+;CODE  : ASCII 
+;FILE  : single210117-1-1-np.drl for board E:/application/Cadence/project/single-measure/PCB/#Taaabhp16488.tmp ... layers TOP and TOP
+;   Holesize 1. = 1.000000 Tolerance = +0.000000/-0.000000 NON_PLATED MM Quantity = 1
+%
+G90
+X-1351200Y-962200
+M30

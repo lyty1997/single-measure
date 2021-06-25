@@ -1,0 +1,21 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Island Report                                              )
+(                                                                     )
+(    Drawing          : single192308.brd                              )
+(    Software Version : 17.2S058                                      )
+(    Date/Time        : Sun Jan 17 17:50:48 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Total islands on design: 2
+
+
+  <<<  ETCH  >>>
+
+    Layer = TOP
+	Point on shape: (-15.0615 -12.7000)  Net: N1326027
+
+    Layer = BOTTOM
+	Point on shape: (-16.8067 -8.1871)  Net: N1326027

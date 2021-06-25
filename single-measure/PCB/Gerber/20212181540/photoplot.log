@@ -1,0 +1,663 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : single20210218.brd                            )
+(    Software Version : 17.2S058                                      )
+(    Date/Time        : Thu Feb 18 18:40:20 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          MM
+    FILM-SIZE             5000000 5000000
+    FORMAT                5.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  YES
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        YES
+    UNDEF-APT-CONT        NO
+
+
+
+================================================================
+     PROCESSING FILM < adt >
+     TO FILE < D:/Program/project/single-measure/PCB/adt.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.12000                                  DARK 
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15200                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  CIRCLE     1.60000                                  DARK 
+  CIRCLE     6.20000                                  DARK 
+  SQUARE     0.50000                     0.000 NO     DARK 
+  SQUARE     2.00000                     0.000 NO     DARK 
+  SQUARE     3.30000                     0.000 NO     DARK 
+  RECTANGLE  0.28000     x 0.45000      90.000 NO     DARK 
+  RECTANGLE  0.30000     x 0.45000       0.000 NO     DARK 
+  RECTANGLE  0.30000     x 1.00000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.75000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.75000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 1.85000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.60000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.70000      90.000 NO     DARK 
+  RECTANGLE  0.65000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.70000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.00000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.30000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.30000      90.000 NO     DARK 
+  RECTANGLE  0.90000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.90000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  1.00000     x 0.90000       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 0.90000      90.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.95000       0.000 NO     DARK 
+  RECTANGLE  1.35000     x 2.20000      90.000 NO     DARK 
+  RECTANGLE  1.58000     x 0.58000       0.000 NO     DARK 
+  RECTANGLE  1.60000     x 2.34000       0.000 NO     DARK 
+  RECTANGLE  1.62500     x 0.90000      90.000 NO     DARK 
+  RECTANGLE  1.69000     x 1.30000      90.000 NO     DARK 
+  RECTANGLE  2.10000     x 1.40000       0.000 NO     DARK 
+  RECTANGLE  2.20000     x 0.45000       0.000 NO     DARK 
+  RECTANGLE  2.20000     x 2.20000      90.000 NO     DARK 
+  OBLONG     0.25000     x 1.00000       0.000 NO     DARK 
+  OBLONG     0.25000     x 1.00000      90.000 NO     DARK 
+  OBLONG     0.30000     x 1.60000       0.000 NO     DARK 
+  OBLONG     0.30000     x 1.60000      90.000 NO     DARK 
+  PAD SHAPE  ROUNDED_RECTANGLE ,2667.0  90.000 NO     DARK 
+
+     adt created.
+
+
+================================================================
+     PROCESSING FILM < adb >
+     TO FILE < D:/Program/project/single-measure/PCB/adb.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15200                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  CIRCLE     1.60000                                  DARK 
+  CIRCLE     6.20000                                  DARK 
+  RECTANGLE  0.40000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000      90.000 NO     DARK 
+
+     adb created.
+
+
+================================================================
+     PROCESSING FILM < drill >
+     TO FILE < D:/Program/project/single-measure/PCB/drill.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: 0 width line found at (47.4000 -29.3500)
+           ... using undefined line width of 0.1520
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.1520
+
+    WARNING: text composed 0 width line found at (58.8173 16.6875)
+           ... using undefined line width of 0.1520
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.1520
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15200                                  DARK 
+
+     drill created with warnings
+
+
+================================================================
+     PROCESSING FILM < outline >
+     TO FILE < D:/Program/project/single-measure/PCB/outline.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15200                                  DARK 
+
+     outline created.
+
+
+================================================================
+     PROCESSING FILM < soldtop >
+     TO FILE < D:/Program/project/single-measure/PCB/soldtop.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15200                                  DARK 
+  CIRCLE     0.60960                                  DARK 
+  CIRCLE     1.50000                                  DARK 
+  CIRCLE     1.70000                                  DARK 
+  CIRCLE     6.30000                                  DARK 
+  SQUARE     0.55000                     0.000 NO     DARK 
+  SQUARE     2.50000                     0.000 NO     DARK 
+  SQUARE     3.40000                     0.000 NO     DARK 
+  RECTANGLE  0.38000     x 0.55000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.55000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 1.10000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.60000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.85000       0.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.85000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 2.00000      90.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.70000      90.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.90000      90.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.75000       0.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.85000       0.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.85000      90.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.90000       0.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.10000       0.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.40000       0.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.40000      90.000 NO     DARK 
+  RECTANGLE  1.00000     x 0.90000       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 0.90000      90.000 NO     DARK 
+  RECTANGLE  1.10000     x 1.00000       0.000 NO     DARK 
+  RECTANGLE  1.10000     x 1.00000      90.000 NO     DARK 
+  RECTANGLE  1.30000     x 1.00000       0.000 NO     DARK 
+  RECTANGLE  1.45000     x 2.30000      90.000 NO     DARK 
+  RECTANGLE  1.60000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  1.70000     x 2.44000       0.000 NO     DARK 
+  RECTANGLE  1.80000     x 1.00000      90.000 NO     DARK 
+  RECTANGLE  1.80000     x 1.40000      90.000 NO     DARK 
+  RECTANGLE  2.20000     x 1.50000       0.000 NO     DARK 
+  RECTANGLE  2.25000     x 2.25000      90.000 NO     DARK 
+  RECTANGLE  2.30000     x 0.50000       0.000 NO     DARK 
+  OBLONG     0.35000     x 1.10000       0.000 NO     DARK 
+  OBLONG     0.35000     x 1.10000      90.000 NO     DARK 
+  OBLONG     0.40000     x 1.70000       0.000 NO     DARK 
+  OBLONG     0.40000     x 1.70000      90.000 NO     DARK 
+  PAD SHAPE  ROUNDED_RECTANGLE ,2833.0  90.000 NO     DARK 
+
+     soldtop created.
+
+
+================================================================
+     PROCESSING FILM < soldbot >
+     TO FILE < D:/Program/project/single-measure/PCB/soldbot.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15200                                  DARK 
+  CIRCLE     0.60960                                  DARK 
+  CIRCLE     1.40000                                  DARK 
+  CIRCLE     1.50000                                  DARK 
+  CIRCLE     1.70000                                  DARK 
+  CIRCLE     6.30000                                  DARK 
+  RECTANGLE  0.50000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.60000      90.000 NO     DARK 
+
+     soldbot created.
+
+
+================================================================
+     PROCESSING FILM < silktop >
+     TO FILE < D:/Program/project/single-measure/PCB/silktop.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.12000                                  DARK 
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15200                                  DARK 
+
+     silktop created.
+
+
+================================================================
+     PROCESSING FILM < silkbot >
+     TO FILE < D:/Program/project/single-measure/PCB/silkbot.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15200                                  DARK 
+
+     silkbot created.
+
+
+================================================================
+     PROCESSING FILM < pasttop >
+     TO FILE < D:/Program/project/single-measure/PCB/pasttop.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15200                                  DARK 
+  SQUARE     0.50000                     0.000 NO     DARK 
+  SQUARE     2.00000                     0.000 NO     DARK 
+  SQUARE     3.00000                     0.000 NO     DARK 
+  RECTANGLE  0.28000     x 0.45000      90.000 NO     DARK 
+  RECTANGLE  0.30000     x 0.45000       0.000 NO     DARK 
+  RECTANGLE  0.30000     x 1.00000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.75000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.75000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 1.85000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.60000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.70000      90.000 NO     DARK 
+  RECTANGLE  0.65000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.70000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.00000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.30000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.30000      90.000 NO     DARK 
+  RECTANGLE  0.90000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.90000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  1.00000     x 0.90000       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 0.90000      90.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.95000       0.000 NO     DARK 
+  RECTANGLE  1.35000     x 2.20000      90.000 NO     DARK 
+  RECTANGLE  1.58000     x 0.58000       0.000 NO     DARK 
+  RECTANGLE  1.60000     x 2.34000       0.000 NO     DARK 
+  RECTANGLE  1.62500     x 0.90000      90.000 NO     DARK 
+  RECTANGLE  1.69000     x 1.30000      90.000 NO     DARK 
+  RECTANGLE  2.10000     x 1.40000       0.000 NO     DARK 
+  RECTANGLE  2.20000     x 0.45000       0.000 NO     DARK 
+  RECTANGLE  2.20000     x 2.20000      90.000 NO     DARK 
+  OBLONG     0.25000     x 1.00000       0.000 NO     DARK 
+  OBLONG     0.25000     x 1.00000      90.000 NO     DARK 
+  OBLONG     0.30000     x 1.60000       0.000 NO     DARK 
+  OBLONG     0.30000     x 1.60000      90.000 NO     DARK 
+  PAD SHAPE  ROUNDED_RECTANGLE ,2667.0  90.000 NO     DARK 
+
+     pasttop created.
+
+
+================================================================
+     PROCESSING FILM < pastbot >
+     TO FILE < D:/Program/project/single-measure/PCB/pastbot.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15200                                  DARK 
+  RECTANGLE  0.40000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000      90.000 NO     DARK 
+
+     pastbot created.
+
+
+================================================================
+     PROCESSING FILM < art01 >
+     TO FILE < D:/Program/project/single-measure/PCB/art01.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15200                                  DARK 
+  CIRCLE     0.45720                                  DARK 
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     0.50800                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  CIRCLE     1.40000                                  DARK 
+  CIRCLE     1.60000                                  DARK 
+  CIRCLE     6.20000                                  DARK 
+  SQUARE     0.50000                     0.000 NO     DARK 
+  SQUARE     2.00000                     0.000 NO     DARK 
+  SQUARE     3.30000                     0.000 NO     DARK 
+  RECTANGLE  0.28000     x 0.45000      90.000 NO     DARK 
+  RECTANGLE  0.30000     x 0.45000       0.000 NO     DARK 
+  RECTANGLE  0.30000     x 1.00000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.75000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.75000      90.000 NO     DARK 
+  RECTANGLE  0.40000     x 1.85000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.60000      90.000 NO     DARK 
+  RECTANGLE  0.50000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.70000      90.000 NO     DARK 
+  RECTANGLE  0.65000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.70000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.00000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.30000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.30000      90.000 NO     DARK 
+  RECTANGLE  0.90000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  0.90000     x 0.80000      90.000 NO     DARK 
+  RECTANGLE  1.00000     x 0.90000       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 0.90000      90.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.95000       0.000 NO     DARK 
+  RECTANGLE  1.35000     x 2.20000      90.000 NO     DARK 
+  RECTANGLE  1.58000     x 0.58000       0.000 NO     DARK 
+  RECTANGLE  1.60000     x 2.34000       0.000 NO     DARK 
+  RECTANGLE  1.62500     x 0.90000      90.000 NO     DARK 
+  RECTANGLE  1.69000     x 1.30000      90.000 NO     DARK 
+  RECTANGLE  2.10000     x 1.40000       0.000 NO     DARK 
+  RECTANGLE  2.20000     x 0.45000       0.000 NO     DARK 
+  RECTANGLE  2.20000     x 2.20000      90.000 NO     DARK 
+  OBLONG     0.25000     x 1.00000       0.000 NO     DARK 
+  OBLONG     0.25000     x 1.00000      90.000 NO     DARK 
+  OBLONG     0.30000     x 1.60000       0.000 NO     DARK 
+  OBLONG     0.30000     x 1.60000      90.000 NO     DARK 
+  PAD SHAPE  ROUNDED_RECTANGLE ,2667.0  90.000 NO     DARK 
+
+     art01 created.
+
+
+================================================================
+     PROCESSING FILM < art02 >
+     TO FILE < D:/Program/project/single-measure/PCB/art02.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15200                                  DARK 
+  CIRCLE     0.45720                                  DARK 
+  CIRCLE     0.50800                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  CIRCLE     1.40000                                  DARK 
+  CIRCLE     1.60000                                  DARK 
+  CIRCLE     6.20000                                  DARK 
+
+     art02 created.
+
+
+================================================================
+     PROCESSING FILM < art03 >
+     TO FILE < D:/Program/project/single-measure/PCB/art03.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: Film contains objects with associated DRCs (1).
+           In the design editor view this film and enable visibility for the
+           associated DRC layer. Verify the DRCs are approved exceptions to your rules.
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15200                                  DARK 
+  CIRCLE     0.45720                                  DARK 
+  CIRCLE     0.50800                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  CIRCLE     1.40000                                  DARK 
+  CIRCLE     1.60000                                  DARK 
+  CIRCLE     6.20000                                  DARK 
+
+     art03 created with warnings
+
+
+================================================================
+     PROCESSING FILM < art04 >
+     TO FILE < D:/Program/project/single-measure/PCB/art04.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1520
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: Film contains objects with associated DRCs (3).
+           In the design editor view this film and enable visibility for the
+           associated DRC layer. Verify the DRCs are approved exceptions to your rules.
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15200                                  DARK 
+  CIRCLE     0.45720                                  DARK 
+  CIRCLE     0.50800                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  CIRCLE     1.40000                                  DARK 
+  CIRCLE     1.60000                                  DARK 
+  CIRCLE     6.20000                                  DARK 
+  RECTANGLE  0.40000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.40000     x 0.50000      90.000 NO     DARK 
+
+     art04 created with warnings
+
+
+------------------------------------------------------
+ SUMMARY:
+        adt created.
+        adb created.
+        drill created with warnings
+        outline created.
+        soldtop created.
+        soldbot created.
+        silktop created.
+        silkbot created.
+        pasttop created.
+        pastbot created.
+        art01 created.
+        art02 created.
+        art03 created with warnings
+        art04 created with warnings
+
+ ARTWORK had warnings

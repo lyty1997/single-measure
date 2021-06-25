@@ -1,0 +1,21 @@
+\t (00:00:02) allegro 17.2 S058 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Tue Apr 13 20:58:52 2021
+\t (00:00:02)         Host=DESKTOP-ONS7AT2 User=luyangtianyu Pid=7452 CPUs=6
+\t (00:00:02) CmdLine= e:\application\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe E:\application\Cadence\project\single-measure\PCBlibrary\MICRO_USB.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged MICRO_USB
+\d (00:00:03) Design opened: E:/application/Cadence/project/single-measure/PCBlibrary/MICRO_USB.dra
+\i (00:00:03) trapsize 559
+\i (00:00:03) trapsize 574
+\i (00:00:03) trapsize 559
+\i (00:00:03) trapsize 559
+\i (00:00:03) generaledit 
+\i (00:00:24) save_as 
+\i (00:00:34) fillin "E:/application/Cadence/project/multichannel-measure/PCBlibrary/MICRO_USB.dra"
+\i (00:00:34) cd "E:/application/Cadence/project/multichannel-measure/PCBlibrary"
+\t (00:00:34) Symbol 'micro_usb.psm' created.
+\i (00:00:35) generaledit 
+\i (00:00:37) exit 
+\t (00:00:37)     Journal end - Tue Apr 13 20:59:27 2021

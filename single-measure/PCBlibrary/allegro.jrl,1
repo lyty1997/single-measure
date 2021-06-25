@@ -1,0 +1,36 @@
+\t (00:00:02) allegro 17.2 S058 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Tue Apr 13 20:58:23 2021
+\t (00:00:02)         Host=DESKTOP-ONS7AT2 User=luyangtianyu Pid=2796 CPUs=6
+\t (00:00:02) CmdLine= e:\application\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe E:\application\Cadence\project\single-measure\PCBlibrary\MICRO_USB.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged MICRO_USB
+\d (00:00:03) Design opened: E:/application/Cadence/project/single-measure/PCBlibrary/MICRO_USB.dra
+\i (00:00:03) trapsize 559
+\i (00:00:03) trapsize 574
+\i (00:00:03) trapsize 559
+\i (00:00:03) trapsize 559
+\i (00:00:03) generaledit 
+\i (00:00:04) zoom in 1 
+\i (00:00:05) setwindow pcb
+\i (00:00:05) zoom in 0.2346 -0.4637
+\i (00:00:05) trapsize 279
+\i (00:00:05) zoom out 1 
+\i (00:00:05) setwindow pcb
+\i (00:00:05) zoom out 0.2626 -0.4357
+\i (00:00:05) trapsize 559
+\i (00:00:06) show measure 
+\i (00:00:07) pick grid 2.0335 0.2402
+\t (00:00:07) last pick:  1.9050 0.0000
+\i (00:00:07) pick grid 3.1955 0.3631
+\t (00:00:08) last pick:  3.1750 0.6350
+\i (00:00:12) setwindow text
+\i (00:00:12) close
+\i (00:00:13) prepopup -4.7598 -1.6257
+\i (00:00:15) cancel 
+\i (00:00:15) generaledit 
+\i (00:00:16) pick grid -5.2514 -1.3687
+\t (00:00:16) last pick:  -5.3000 -1.4000
+\i (00:00:19) exit 
+\t (00:00:19)     Journal end - Tue Apr 13 20:58:40 2021

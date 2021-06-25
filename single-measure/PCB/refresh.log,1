@@ -1,0 +1,131 @@
+Mon Jan 18 01:55:16 2021				Page     1
+
+
+ 
+Update Symbols/Modules Logfile
+	Mon Jan 18 01:55:16 2021
+
+------ Module Refresh Messages ------
+
+SUMMARY:    Updated 0 out of 0 modules
+
+------ End Module Messages     ------
+
+
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : single192308.brd                              )
+(    Software Version : 17.2S058                                      )
+(    Date/Time        : Mon Jan 18 01:55:17 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Mon Jan 18 01:55:17 2021				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'E:/application/Cadence/project/single-measure/PCB/single192308.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'YES'
+Update shape/flash symbols             = 'NO'
+Update symbol padstacks                = 'NO'
+Preserve padstacks replaced on pins    = 'NO'
+Reset symbol text and size locations   = 'NO'
+Reset Pin Escapes (fanouts)            = 'NO'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'NO'
+
+
+------ Library Paths ------
+PSMPATH =  E:/application/Cadence/project/single-measure/PCBlibrary/ 
+
+PADPATH =  E:/application/Cadence/project/single-measure/PCBlibrary/ 
+
+
+------ Symbol Refresh Messages ------
+
+'TP0805'  symbol refreshed successfully.
+'R0402'  symbol refreshed successfully.
+'C0402'  symbol refreshed successfully.
+'Y2520'  symbol refreshed successfully.
+'Y2016'  symbol refreshed successfully.
+'D0402'  symbol refreshed successfully.
+'6_6_5'  symbol refreshed successfully.
+'L0603'  symbol refreshed successfully.
+'C3216-18'  symbol refreshed successfully.
+'C0805'  symbol refreshed successfully.
+'D0603'  symbol refreshed successfully.
+'C0603'  symbol refreshed successfully.
+'Y3225'  symbol refreshed successfully.
+'F0603'  symbol refreshed successfully.
+'L2012-2P'  symbol refreshed successfully.
+'SOT_5'  symbol refreshed successfully.
+'SOT_23'  symbol refreshed successfully.
+'SOD_523F'  symbol refreshed successfully.
+'SOD_323'  symbol refreshed successfully.
+'SOT_353'  symbol refreshed successfully.
+'LED_RGB_1204'  symbol refreshed successfully.
+'2P2R54'  symbol refreshed successfully.
+'3P2R54_2'  symbol refreshed successfully.
+'LFCSP_8'  symbol refreshed successfully.
+'QFN_32'  symbol refreshed successfully.
+
+'MICRO_USB'  symbol starting to refresh:
+     ERROR(SPMHDB-243): Cannot modify element; the object or a parent has the FIXED property. [help]
+     ERROR(SPMHNI-254): Unable to load symbol, 'MICRO_USB': 'Cannot modify element; the object or a parent has the FIXED property.~
+      [help]'.
+     
+
+'M23R6_6R2'  symbol starting to refresh:
+     ERROR(SPMHDB-243): Cannot modify element; the object or a parent has the FIXED property. [help]
+     ERROR(SPMHNI-254): Unable to load symbol, 'M23R6_6R2': 'Cannot modify element; the object or a parent has the FIXED property.~
+      [help]'.
+     
+
+'5P2R54'  symbol starting to refresh:
+     ERROR(SPMHDB-243): Cannot modify element; the object or a parent has the FIXED property. [help]
+     ERROR(SPMHNI-254): Unable to load symbol, '5P2R54': 'Cannot modify element; the object or a parent has the FIXED property. [h~
+     elp]'.
+     
+
+'SOP_16'  symbol starting to refresh:
+     ERROR(SPMHDB-243): Cannot modify element; the object or a parent has the FIXED property. [help]
+     ERROR(SPMHNI-254): Unable to load symbol, 'SOP_16': 'Cannot modify element; the object or a parent has the FIXED property. [h~
+     elp]'.
+     
+
+'MINI_USB'  symbol starting to refresh:
+     Mon Jan 18 01:55:17 2021				Page     2
+
+
+     ERROR(SPMHDB-243): Cannot modify element; the object or a parent has the FIXED property. [help]
+     ERROR(SPMHNI-254): Unable to load symbol, 'MINI_USB': 'Cannot modify element; the object or a parent has the FIXED property. ~
+     [help]'.
+     
+
+'IPEX4'  symbol starting to refresh:
+     ERROR(SPMHDB-243): Cannot modify element; the object or a parent has the FIXED property. [help]
+     ERROR(SPMHNI-254): Unable to load symbol, 'IPEX4': 'Cannot modify element; the object or a parent has the FIXED property. [he~
+     lp]'.
+     
+
+'LQFP_64'  symbol starting to refresh:
+     ERROR(SPMHDB-243): Cannot modify element; the object or a parent has the FIXED property. [help]
+     ERROR(SPMHNI-254): Unable to load symbol, 'LQFP_64': 'Cannot modify element; the object or a parent has the FIXED property. [~
+     help]'.
+     
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 25 out 32
+    Design updated.
+

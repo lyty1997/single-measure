@@ -1,0 +1,78 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : single20210120.brd                            )
+(    Software Version : 17.2S058                                      )
+(    Date/Time        : Thu Feb 18 14:20:42 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  No
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'D:/Program/project/single-measure/Schematic/allegro'
+Design Directory:            'D:/Program/project/single-measure/PCB'
+Old design name:             'D:/Program/project/single-measure/PCB/single20210120.brd'
+New design name:             'D:/Program/project/single-measure/PCB/single20210120.brd'
+
+CmdLine: netrev -$ -i D:/Program/project/single-measure/Schematic/allegro -y 1 -h -q netrev_constraint_report.xml D:/Program/project/single-measure/PCB/#Taaaaez13468.tmp
+
+------ Preparing to read pst files ------
+
+Starting to read D:/Program/project/single-measure/Schematic/allegro/pstchip.dat 
+   Finished reading D:/Program/project/single-measure/Schematic/allegro/pstchip.dat (00:00:00.05)
+Starting to read D:/Program/project/single-measure/Schematic/allegro/pstxprt.dat 
+   Finished reading D:/Program/project/single-measure/Schematic/allegro/pstxprt.dat (00:00:00.00)
+Starting to read D:/Program/project/single-measure/Schematic/allegro/pstxnet.dat 
+   Finished reading D:/Program/project/single-measure/Schematic/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           D:/Applications/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/modules 
+
+PSMPATH =  D:/Program/project/single-measure/PCBlibrary/ 
+
+PADPATH =  D:/Program/project/single-measure/PCBlibrary/ 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Feb 18 14:20:42 2021
+   DESIGN NAME : 'SINGLE1'
+   PACKAGING ON Aug  6 2019 19:29:12
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:03:01
+elapsed time  0:00:01
+

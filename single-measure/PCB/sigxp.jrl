@@ -1,0 +1,28 @@
+\t (00:00:00) sigxp 17.2 S058 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Jan 12 17:09:28 2021
+\t (00:00:00)         Host=DESKTOP-ONS7AT2 User=luyangtianyu Pid=11760 CPUs=6
+\t (00:00:00) CmdLine= sigxp -spawn -orcad -p E:\application\Cadence\project\single-measure\PCB C:/Users/LUYANG~1/AppData/Local/Temp/#Taaaavl12056.tmp
+\t (00:00:00) 
+\t (00:00:00) Starting new design...
+\i (00:00:01) trapsize 1024
+\i (00:00:01) trapsize 994
+\i (00:00:01) trapsize 1028
+\i (00:00:01) trapsize 1080
+\i (00:00:02) trapsize 7589
+\i (00:00:02) trapsize 1518
+\t (00:00:02) Starting new design...
+\i (00:00:04) trapsize 7589
+\i (00:00:04) trapsize 7589
+\i (00:00:04) trapsize 7589
+   (00:00:04) Loading signal.cxt 
+   (00:00:04) Loading sigxp.cxt 
+   (00:00:04) Loading sxutil.cxt 
+   (00:00:04) Loading axlcore.cxt 
+   (00:00:04) Loading fputil.cxt 
+   (00:00:04) Beginning Autoplacement
+   (00:00:04) Finished Autoplacement
+\i (00:00:04) trapsize 32
+   (00:00:04) Loading skillExt.cxt 
+\i (00:00:05) sigxp background 
+\i (00:00:17) exit 
+\t (00:00:17)     Journal end - Tue Jan 12 17:09:45 2021

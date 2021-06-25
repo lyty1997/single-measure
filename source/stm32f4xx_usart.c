@@ -560,7 +560,7 @@ void USART_SendData(USART_TypeDef* USARTx, uint16_t Data)
   /* Check the parameters */
   assert_param(IS_USART_ALL_PERIPH(USARTx));
   assert_param(IS_USART_DATA(Data)); 
-    
+  while((USARTx->SR & USART_FLAG_TXE)==0);
   /* Transmit Data */
   USARTx->DR = (Data & (uint16_t)0x01FF);
 }
@@ -575,7 +575,7 @@ uint16_t USART_ReceiveData(USART_TypeDef* USARTx)
 {
   /* Check the parameters */
   assert_param(IS_USART_ALL_PERIPH(USARTx));
-  
+  while((USARTx->SR & USART_FLAG_RXNE)==0);
   /* Receive Data */
   return (uint16_t)(USARTx->DR & (uint16_t)0x01FF);
 }

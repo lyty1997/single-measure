@@ -154,16 +154,13 @@ void get_buffered_line(void)
 /********************************************************************************************************/
 //printf重定向到串口函数
 /********************************************************************************************************/
-int _write (int fd, char *pBuffer, int size)  
-{  
-    if (fd > 2)
-    {
-        return -1;
-    }
+int _write (int fd, char *pBuffer, int size){  
+    // if (fd > 2)
+    // {
+    //     return -1;
+    // }
     
-    for (int i = 0; i < size; i++)  
-
-    {  
+    for (int i = 0; i < size; i++){  
         while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);//等待上一次串口数据发送完成  
 
         USART1->DR = (uint8_t) *(pBuffer+i);       //写DR,串口1将发送数据
@@ -172,6 +169,30 @@ int _write (int fd, char *pBuffer, int size)
     return size;  
 }
 /********************************************************************************************************/
+/********************************************************************************************************/
+// int _write_r (struct _reent *r, int file, char * ptr, int len)
+// {  
+//   r = r;
+//   file = file;
+//   ptr = ptr;
+ 
+// #if 1
+//   int index;
+//   /* For example, output string by UART or ITM*/
+//   for(index=0; index<len; index++)
+//   {
+//     if (ptr[index] == '\n')
+//     {
+//       USART_SendData(USART1,'\r');
+//     }  
+ 
+//     USART_SendData(USART1,ptr[index]);
+//   }  
+// #endif   
+  
+//   return len;
+// }
+/*********************************************************************************************/
 /*
  * Called by the libc stdio fread fucntions
  *

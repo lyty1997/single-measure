@@ -1,0 +1,49 @@
+
+Copyright (c) 2006-2018, Elgris Technologies, Inc.
+
+OrCAD Capture to EDIF 2 0 0 Schematic Conversion Program SPB 17.20 QIR7 I049_1.105b built Nov 11 2018
+
+Started on Thu Apr 08 11:21:23 2021
+
+Reading config file e:\application\cadence\cadence_spb_17.2-2016\tools\capture\cap2edi.cfg
+
+orcadread :Converting file E:\APPLICATION\CADENCE\PROJECT\SINGLE-MEASURE\SCHEMATIC\SINGLE1.DSN 
+Converting SchematicView   SCHEMATIC1 
+	Converting elements on  page 06 Power
+		Converting Parts
+		converting Globals of Page 06 Power of SchematicView SCHEMATIC1
+	Converting elements on  page 05 USB_COM
+		Converting Parts
+		converting Globals of Page 05 USB_COM of SchematicView SCHEMATIC1
+		Converting Connectors of Page 05 USB_COM of SchematicView SCHEMATIC1
+	Converting elements on  page 04 CDC_PCAP02AE
+		Converting Parts
+		converting Globals of Page 04 CDC_PCAP02AE of SchematicView SCHEMATIC1
+		Converting Connectors of Page 04 CDC_PCAP02AE of SchematicView SCHEMATIC1
+		Converting Ports of Page 04 CDC_PCAP02AE of SchematicView SCHEMATIC1
+	Converting elements on  page 03 MCU_STM32F405VGT6
+		Converting Parts
+		converting Globals of Page 03 MCU_STM32F405VGT6 of SchematicView SCHEMATIC1
+		Converting Connectors of Page 03 MCU_STM32F405VGT6 of SchematicView SCHEMATIC1
+		Converting Ports of Page 03 MCU_STM32F405VGT6 of SchematicView SCHEMATIC1
+	Converting elements on  page 02 Version
+	Converting elements on  page 01 Overview
+		Converting Parts
+		converting Globals of Page 01 Overview of SchematicView SCHEMATIC1
+		Converting Connectors of Page 01 Overview of SchematicView SCHEMATIC1
+		Converting Ports of Page 01 Overview of SchematicView SCHEMATIC1
+	Converting elements on  page 07 Add
+		Converting Parts
+		Converting Connectors of Page 07 Add of SchematicView SCHEMATIC1
+		Converting Buses and Nets of Schematic View SCHEMATIC1 
+
+Writing EDIF: E:\application\Cadence\project\single-measure\Schematic\SINGLE1.EDF
+.............................................................
+..............................................................
+...............................................................
+
+
+Finished on Thu Apr 08 11:21:25 2021
+
+
+0 errors detected, 0 warnings detected

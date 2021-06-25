@@ -1,0 +1,26 @@
+M48
+METRIC,TZ
+T01C.2032
+T02C.254
+T03C.3048
+T04C.9
+T05C1.
+T06C3.6
+T07C.6
+T08C.9
+T09C1.
+;LEADER: 12 
+;HEADER: 
+;CODE  : ASCII 
+;FILE  : single210117-1-4-np.drl for board E:/application/Cadence/project/single-measure/PCB/#Taaabaz16488.tmp ... layers TOP and BOTTOM
+;T07 Holesize 1. = 0.600000 Tolerance = +0.000000/-0.000000 NON_PLATED MM Quantity = 2
+;T08 Holesize 2. = 0.900000 Tolerance = +0.000000/-0.000000 NON_PLATED MM Quantity = 2
+%
+G90
+T07
+X2656800Y-492900
+Y-92900
+T08
+X2499200Y-1727000
+Y-1287000
+M30

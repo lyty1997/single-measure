@@ -1,0 +1,103 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC DRILL Log                                                     )
+(                                                                     )
+(    Drawing          : single20210218.brd                            )
+(    Software Version : 17.2S058                                      )
+(    Date/Time        : Thu Feb 18 18:31:00 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file 'nc_param.txt' ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		5.5
+ MACHINE-OFFSET		x:0.00000	y:0.00000   (mm)
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		METRIC
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		YES
+ SUPPRESS-LEAD-ZEROES	YES
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		YES
+ TOOL-SELECT		YES
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		YES
+ SEPARATE-ROUTING	NO
+ OPTIMIZE_DRILLING	YES
+ ENHANCED_EXCELLON	YES
+ SCALE			1.000000
+
+ WARNING(SPMHMF-368): Cannot find NC Drill tool file 'nc_tools.txt'
+ WARNING(SPMHMF-369): ... will auto-generate tool file 'nc_tools_auto.txt'.
+
+
+     Auto-generating tool file 'nc_tools_auto.txt' ...
+
+           Size  Plating  Tool        + Tolerance  - Tolerance
+
+         0.2540  P        T01            0.000000     0.000000
+         0.3048  P        T02            0.000000     0.000000
+         0.9000  P        T03            0.000000     0.000000
+         1.0000  P        T04            0.000000     0.000000
+         3.6000  P        T05            0.000000     0.000000
+         0.6000  N        T06            0.000000     0.000000
+         0.9000  N        T07            0.000000     0.000000
+         1.0000  N        T08            0.000000     0.000000
+
+
+Drill files being output to directory 'D:/Program/project/single-measure/PCB/Gerber/20212181540' ...
+
+
+
+     'single210218-1-4.drl' created for holes connecting TOP and BOTTOM ; Plating = PLATED
+     -------------------------------------------------------------------------------------
+
+     Tool  Num     Size      +/- Tolerance     Plating   Quantity
+
+     T01    1.   0.2540    0.0000/  0.0000      PLATED        663
+     T02    2.   0.3048    0.0000/  0.0000      PLATED         63
+     T03    3.   0.9000    0.0000/  0.0000      PLATED         17
+     T04    4.   1.0000    0.0000/  0.0000      PLATED          1
+     T05    5.   3.6000    0.0000/  0.0000      PLATED          1
+
+     ---- Total holes:                                        745
+
+     ---- Total head travel:              5.04 feet (1.54 meters)
+
+
+
+
+     'single210218-1-4-np.drl' created for holes connecting TOP and BOTTOM ; Plating = NON_PLATED
+     --------------------------------------------------------------------------------------------
+
+     Tool  Num     Size      +/- Tolerance     Plating   Quantity
+
+     T06    1.   0.6000    0.0000/  0.0000  NON_PLATED          2
+     T07    2.   0.9000    0.0000/  0.0000  NON_PLATED          2
+
+     ---- Total holes:                                          4
+
+     ---- Total head travel:              0.17 feet (0.05 meters)
+
+
+
+
+     'single210218-1-1-np.drl' created for holes connecting TOP and TOP ; Plating = NON_PLATED
+     -----------------------------------------------------------------------------------------
+
+     Tool  Num     Size      +/- Tolerance     Plating   Quantity
+
+     T08    1.   1.0000    0.0000/  0.0000  NON_PLATED          1
+
+     ---- Total holes:                                          1
+
+     ---- Total head travel:              0.05 feet (0.02 meters)
+

@@ -1,0 +1,2 @@
+cd "E:/application/Cadence/project/Acquisition Circuit Test/PCBlibrary/QFP50P1600X1600X120-101N/QFP50P1600X1600X120-101N_Allegro"
+skill (LB_createFootprint "E:/application/Cadence/project/Acquisition Circuit Test/PCBlibrary/QFP50P1600X1600X120-101N/QFP50P1600X1600X120-101N_Allegro/QFP50P1600X1600X120-101N.xml")

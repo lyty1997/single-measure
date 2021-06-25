@@ -1,0 +1,11 @@
+;LEADER: 12 
+;HEADER: 
+;CODE  : ASCII 
+;FILE  : single210117-1-1.drl for  ... layers TOP and TOP
+;DESIGN: single192308.brd
+;T09 Holesize 1. = 1.000000 Tolerance = +0.000000/-0.000000 NON_PLATED MM Quantity = 1
+%
+G90
+T09
+X-01351200Y-00962200
+M30
