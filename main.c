@@ -835,14 +835,14 @@ uint8_t PCap02_firmware[1536] =
 					
 /********************* 声明PCap02使用的变量 ***********************************/
 
-uint32_t  RES;
-uint32_t  Res0_content;
-uint32_t  STATUS;						
+
+// uint32_t  Res0_content;
+// uint32_t  STATUS;						
 uint8_t   Res1_content[3];
-uint8_t		Res_content[45];
-float     Res4_content;
-double     Capacitance_ratio;
-uint8_t   Status_content[3];
+// uint8_t		Res_content[45];
+// float     Res4_content;
+// double     Capacitance_ratio;
+// uint8_t   Status_content[3];
 uint8_t		RunBit;
 /********************************************************************************/
 
@@ -877,6 +877,9 @@ void assert_failed(uint8_t* file, uint32_t line)
   ********************************************************************/
 int main()
 {
+	/* ================================定义变量=====================================*/
+	int RES;
+	// int RES_Mirror=0;
 	//用宏来选择要执行的动作，不用的注释掉
 //	#define LOAD_FIRMWARE_ARRAY
 //	#define LOAD_HEX_FIRMWARE_FILE
@@ -908,7 +911,7 @@ int main()
 	//PCAP02电源复位
  	SPI_PCAP02_SendByte(PCap02_Power_Reset);
 	
-	LED_PURPLE;
+	LED_WHITE;
 //	printf("Using the 0x%02X Clock source \n", RCC_GetSYSCLKSource () );
 //	printf("ClocksFrequency = %s\n", RCC_GetClocksFreq( SYSCLK) );
 	
@@ -1157,9 +1160,10 @@ int main()
 //		SPI_PCAP02_SendByte(PCap02_CDC_Start_Conversion);
 		//硬件GPIO3上升沿触发
 //		SPI_PCAP02_PG3_HIGH();
-		Wait_For_Measurement();
-		LED_CYAN;
-		printf("debug\n");
+		// measure_again:
+		// Wait_For_Measurement();
+		// LED_CYAN;
+		// printf("debug\n");
 		//	读取状态寄存器
 //		SPI_PCAP02_Status();	
 		//读取结果
@@ -1172,6 +1176,7 @@ int main()
 		//结果寄存器+3
 //		Write_Incremental(PCAP02_SPI, Read_Results, 0x09, Res1_content, 3);
 		/********* 6通道结果读取 **********/
+		// measure_again:
 		Write_Incremental(PCAP02_SPI, Read_Results, 0x12, Res1_content, 3);
 
 		// debug
@@ -1180,7 +1185,12 @@ int main()
 		// }
 // LED_CYAN;
     	RES = (Res1_content[2] << 16) | (Res1_content[1] << 8) | Res1_content[0];
-		// printf("%ld\n", RES);
+		// if(RES == RES_Mirror){
+        //   goto measure_again;          
+        // }
+        // RES_Mirror = RES;
+
+		printf("%d\n", RES);
 		// 读取所有结果寄存器
 //		Write_Incremental(PCAP02_SPI, Read_Results, 0x00, Res_content, 45);
 //    RES = (Res_content[5] << 16) | (Res_content[4] << 8) | Res_content[3];
@@ -1188,13 +1198,13 @@ int main()
 		//	读取状态寄存器
 //		SPI_PCAP02_Status();	
     	// Capacitance_ratio = RES / pow(2,21);
-		Capacitance_ratio = (RES / 2097152)*1000000;
+		// Capacitance_ratio = (RES / 2097152)*1000000;
 		// Capacitance_ratio = RES;
 	
-		printf("RES = %ld\n", RES);
+		// printf("%d\n", RES_Mirror);
 		// printf("RES/2097152 = %f\n",RES/(double)2097152);
 //			Capacitance_ratio = convertBinaryToDecimal(RES);
-    	printf("Capacitance_ratio = %f\n",  Capacitance_ratio);	
+    	// printf("Capacitance_ratio = %f\n",  Capacitance_ratio);	
 		// LED_CYAN;
 //		printf("  0x%08X\r, %f\n", RES, Capacitance_ratio);	
 		// int res;

@@ -105,7 +105,7 @@ test.bin:test.elf
 test.hex:test.elf
 	arm-none-eabi-objcopy $< -Oihex $@
 test.elf:$(OBJS) $(OBJ_FLASH)
-	arm-none-eabi-gcc $(LFLAGS) $^ -T stlib/STM32F405VGT6_FLASH.ld -o $@
+	arm-none-eabi-gcc $(LFLAGS) $^ -T stlib/STM32F405RGT6_FLASH.ld -o $@
 	arm-none-eabi-size $@
 burn:test.bin
 	st-flash write $< 0x8000000
