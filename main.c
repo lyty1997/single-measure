@@ -879,7 +879,7 @@ int main()
 {
 	/* ================================定义变量=====================================*/
 	int RES;
-	// int RES_Mirror=0;
+	int RES_Mirror=0;
 	//用宏来选择要执行的动作，不用的注释掉
 //	#define LOAD_FIRMWARE_ARRAY
 //	#define LOAD_HEX_FIRMWARE_FILE
@@ -1161,7 +1161,7 @@ int main()
 		//硬件GPIO3上升沿触发
 //		SPI_PCAP02_PG3_HIGH();
 		// measure_again:
-		// Wait_For_Measurement();
+		Wait_For_Measurement();
 		// LED_CYAN;
 		// printf("debug\n");
 		//	读取状态寄存器
@@ -1176,8 +1176,8 @@ int main()
 		//结果寄存器+3
 //		Write_Incremental(PCAP02_SPI, Read_Results, 0x09, Res1_content, 3);
 		/********* 6通道结果读取 **********/
-		// measure_again:
-		Write_Incremental(PCAP02_SPI, Read_Results, 0x12, Res1_content, 3);
+		measure_again:
+		Write_Incremental(PCAP02_SPI, Read_Results, 0x06, Res1_content, 3);
 
 		// debug
 		// for(int i = 0; i <3;i++) {
@@ -1185,10 +1185,10 @@ int main()
 		// }
 // LED_CYAN;
     	RES = (Res1_content[2] << 16) | (Res1_content[1] << 8) | Res1_content[0];
-		// if(RES == RES_Mirror){
-        //   goto measure_again;          
-        // }
-        // RES_Mirror = RES;
+		if(RES == RES_Mirror){
+          goto measure_again;          
+        }
+        RES_Mirror = RES;
 
 		printf("%d\n", RES);
 		// 读取所有结果寄存器
