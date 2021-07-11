@@ -274,6 +274,8 @@ Discarded input sections
                 0x0000000000000000       0x4e main.o
  .data.PCap02_modify_config5_reg
                 0x0000000000000000       0x4e main.o
+ .data.PCap02_modify_config6_reg
+                0x0000000000000000       0x4e main.o
  .data.PCap02_standard_config_reg
                 0x0000000000000000       0x4e main.o
  .data.sram_float_memory
@@ -1355,9 +1357,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard/crtn.o
  .data.PCap02_firmware
                 0x0000000020000064      0x600 main.o
                 0x0000000020000064                PCap02_firmware
- .data.PCap02_modify_config6_reg
+ .data.PCap02_modify_config7_reg
                 0x0000000020000664       0x4e main.o
-                0x0000000020000664                PCap02_modify_config6_reg
+                0x0000000020000664                PCap02_modify_config7_reg
  *fill*         0x00000000200006b2        0x2 
  .data.APBAHBPrescTable
                 0x00000000200006b4       0x10 source/stm32f4xx_rcc.o

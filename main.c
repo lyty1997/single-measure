@@ -264,6 +264,36 @@ uint8_t PCap02_modify_config6_reg[78] = {
           0x00,0x00,0x01};  // Config Register 75, 76, 77
 /*************************************************************************************/
 
+/********************** 套件修改配置7，低速时钟200kHz，阵列，无补偿，通道2 ****************************************/
+uint8_t PCap02_modify_config7_reg[78] = {
+    0x0F,0x0F,0x41,   // Config Register  0,  1,  2,
+    0x94,0x01,0x05,   // Config Register  3,  4,  5,
+    0x04,0x04,0xA8,   // Config Register  6,  7,  8,
+    0x01,0x10,0x00,   // Config Register  9, 10, 11,
+    0x05,0x01,0x00,   // Config Register 12, 13, 14,
+    0x00,0x00,0x14,   // Config Register 15, 16, 17,
+    0x00,0x00,0x00,   // Config Register 18, 19, 20,
+    0x00,0x00,0x02,   // Config Register 21, 22, 23,
+    0x00,0x01,0x00,   // Config Register 24, 25, 26,
+    0x02,0x40,0x05,   // Config Register 27, 28, 29,
+    0x03,0x00,0x00,   // Config Register 30, 31, 32,
+    0x00,0x43,0x05,   // Config Register 33, 34, 35,
+    0x00,0x00,0x50,   // Config Register 36, 37, 38,
+    0x00,0x00,0x00,   // Config Register 39, 40, 41,
+    0x00,0x44,0x00,   // Config Register 42, 43, 44,
+    0x00,0xFF,0x00,   // Config Register 45, 46, 47,
+    0x27,0x30,0x00,   // Config Register 48, 49, 50,
+    0x00,0x00,0x00,   // Config Register 51, 52, 53,
+    0x00,0x00,0x00,   // Config Register 54, 55, 56,
+    0x00,0x00,0x00,   // Config Register 57, 58, 59,
+    0x00,0x00,0x00,   // Config Register 60, 61, 62,
+    0x00,0x00,0x00,   // Config Register 63, 64, 65,
+    0x00,0x00,0x00,   // Config Register 66, 67, 68,
+    0x00,0x00,0x00,   // Config Register 69, 70, 71,
+    0x00,0x28,0x01,   // Config Register 72, 73, 74,
+    0x00,0x00,0x01    // Config Register 75, 76, 77
+	};  
+/*************************************************************************************/
 					
 /************************* PCap02参数寄存器配置(Reg 0 .. 77) ****************************/
 //每单个寄存器配置都是高位写在前，低位写在后
@@ -1138,8 +1168,12 @@ int main()
 //  Write_Incremental(PCAP02_SPI, Write_Config, 0x00, PCap02_modify_config5_reg, sizeof(PCap02_modify_config5_reg));
 	
 	// 写入标准修改的PCap02 config6，低速时钟200kHz，单端，无补偿,通道6
-  puts("Write modify Config...\n");
-  Write_Incremental(PCAP02_SPI, Write_Config, 0x00, PCap02_modify_config6_reg, sizeof(PCap02_modify_config5_reg));
+//   puts("Write modify Config...\n");
+//   Write_Incremental(PCAP02_SPI, Write_Config, 0x00, PCap02_modify_config6_reg, sizeof(PCap02_modify_config5_reg));
+
+  // 写入标准修改的PCap02 config6，低速时钟200kHz，阵列，无补偿,通道2
+  	puts("Write modify Config...\n");
+  	Write_Incremental(PCAP02_SPI, Write_Config, 0x00, PCap02_modify_config7_reg, sizeof(PCap02_modify_config7_reg));
 		
   // RUNBIT 置1
   puts("Set RUNBIT...\n");
@@ -1160,7 +1194,7 @@ int main()
 //		SPI_PCAP02_SendByte(PCap02_CDC_Start_Conversion);
 		//硬件GPIO3上升沿触发
 //		SPI_PCAP02_PG3_HIGH();
-		// measure_again:
+		measure_again:
 		Wait_For_Measurement();
 		// LED_CYAN;
 		// printf("debug\n");
@@ -1176,7 +1210,7 @@ int main()
 		//结果寄存器+3
 //		Write_Incremental(PCAP02_SPI, Read_Results, 0x09, Res1_content, 3);
 		/********* 6通道结果读取 **********/
-		measure_again:
+		// measure_again:
 		Write_Incremental(PCAP02_SPI, Read_Results, 0x06, Res1_content, 3);
 
 		// debug
@@ -1311,21 +1345,21 @@ float find_variance_float(uint16_t sample_count)
 }
 
 /*---------------------------------二进制转十进制-------------------------------------*/
-// void TwoToTen()
-// {   
-//         long long n,a;
-//         int sum = 0, i = 0, m;
-//         printf("输入一个二进制数: ");
-//         scanf("%lld", &n);
-//         a = n;
-//         while (n != 0)
-//         {
-//             m = n % 10;
-//             n /= 10;
-//             sum += m*pow(2, i);
-//             ++i;
-//         }
-//         printf("二进制数 %lld 转换为十进制为 %d\n", a, sum);
-// }
+void TwoToTen()
+{   
+        long long n,a;
+        int sum = 0, i = 0, m;
+        printf("输入一个二进制数: ");
+        scanf("%lld", &n);
+        a = n;
+        while (n != 0)
+        {
+            m = n % 10;
+            n /= 10;
+            sum += m*pow(2, i);
+            ++i;
+        }
+        printf("二进制数 %lld 转换为十进制为 %d\n", a, sum);
+}
 
 
